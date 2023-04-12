@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Produto - Loja de Ferramentas de Construção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Loja de Ferramentas de Construção"></a>
+            </div>
+            <div id="menu">
+                <a href="index.html">Produtos</a>
+                <a href="pagina_descricao_empresa.html">Sobre</a>
+                <a href="pagina_cadastro_usuario.html">Cadastre-se</a>
+                <a href="#">Login</a>
+            </div>
+            <div id="carrinho">
+                <img src="carrinho.png" alt="Carrinho de Compras">
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="produto-detalhes">
+            <h1>Furadeira</h1>
+            <img src="produto1.png" alt="Imagem do Primeiro Produto">
+            <p>Descrição detalhada do primeiro produto, incluindo suas especificações, características e informações relevantes.</p>
+            <p>Preço: R$100,00</p>
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+        <button class="botao-comprar" onclick="adicionarAoCarrinho(1, parseInt(document.querySelector('#quantidade').value))">Comprar</button>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2023 - Loja de Ferramentas de Construção. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

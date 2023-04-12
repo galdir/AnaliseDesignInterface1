@@ -1,58 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferramentas de construção - Página Inicial</title>
+    <title>Loja de Ferramentas de Construção</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="Logo da empresa">
-            </a>
-        </div>
         <nav>
-            <ul class="menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="product-list.html">Produtos</a></li>
-                <li><a href="company-description.html">Sobre nós</a></li>
-            </ul>
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Loja de Ferramentas de Construção"></a>
+            </div>
+            <div id="menu">
+                <a href="index.html">Produtos</a>
+                <a href="pagina_descricao_empresa.html">Sobre</a>
+                <a href="pagina_cadastro_usuario.html">Cadastre-se</a>
+                <a href="#">Login</a>
+            </div>
+            <div id="carrinho">
+                <img src="carrinho.png" alt="Carrinho de Compras">
+            </div>
         </nav>
-        <div class="right">
-            <a href="register.html">Cadastrar</a>
-            <a href="login.html">Entrar</a>
-            <a href="cart.html">
-                <img src="carrinho.png" alt="Ícone de carrinho de compras">
-            </a>
-        </div>
     </header>
     <main>
-        <h1>Produtos em destaque</h1>
-        <section class="product-list">
-            <div class="product-list-item">
-                <a href="product1.html">
-                    <img src="product1.png" alt="Produto 1">
-                    <h2>Produto 1</h2>
-                    <p>R$ 100,00</p>
-                </a>
+        <section id="produtos">
+            <h1>Produtos</h1>
+            <div class="produto">
+                <img src="produto1.png" alt="Produto 1">
+                <h2>Furadeira</h2>
+                <p>Uma furadeira potente e eficiente.</p>
+                <a href="pagina_primeiro_produto.html">Detalhes</a>
             </div>
-            <div class="product-list-item">
-                <a href="">
-                    <img src="product2.png" alt="Produto 2">
-                    <h2>Produto 2</h2>
-                    <p>R$ 200,00</p>
-                </a>
+            <div class="produto">
+                <img src="produto2.png" alt="Produto 2">
+                <h2>Martelo</h2>
+                <p>Um martelo resistente para todas as suas necessidades.</p>
+                <a href="#">Detalhes</a>
             </div>
-            <div class="product-list-item">
-                <a href="">
-                    <img src="product3.png" alt="Produto 3">
-                    <h2>Produto 3</h2>
-                    <p>R$ 300,00</p>
-                </a>
+            <div class="produto">
+                <img src="produto3.png" alt="Produto 3">
+                <h2>Chave de Fenda</h2>
+                <p>Uma chave de fenda versátil e fácil de usar.</p>
+                <a href="#">Detalhes</a>
             </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2023 - Loja de Ferramentas de Construção. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Loja de Ferramentas de Construção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Loja de Ferramentas de Construção"></a>
+            </div>
+            <div id="menu">
+                <a href="index.html">Produtos</a>
+                <a href="pagina_descricao_empresa.html">Sobre</a>
+                <a href="pagina_cadastro_usuario.html">Cadastre-se</a>
+                <a href="#">Login</a>
+            </div>
+            <div id="carrinho">
+                <img src="carrinho.png" alt="Carrinho de Compras">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="cadastro">
+            <h1>Cadastro de Usuário</h1>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required onblur="validarNome()">
+                <span class="erro" id="erro-nome"></span>
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <span class="erro" id="erro-email"></span>
+                <br>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required minlength="8" onblur="validarSenha()">
+                <span class="erro" id="erro-senha"></span>
+                <br>
+                <label for="confirma-senha">Confirme sua senha:</label>
+                <input type="password" id="confirma-senha" name="confirma-senha" required onblur="validarConfirmacaoSenha()">
+                <span class="erro" id="erro-confirma-senha"></span>
+                <br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required onblur="validarEndereco()">
+                <span class="erro" id="erro-endereco"></span>
+                <br>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required pattern="^\d{2}-\d{5}-\d{4}$" placeholder="xx-xxxxx-xxxx" onblur="validarTelefone()">
+                <span class="erro" id="erro-telefone"></span>
+                <br>
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 - Loja de Ferramentas de Construção. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

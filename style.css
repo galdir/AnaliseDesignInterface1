@@ -1,150 +1,159 @@
+/* style.css */
+
+/* Reset CSS */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 10px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
 }
 
-.logo img {
-  height: 40px;
+nav {
+    display: flex;
+    justify-content: space-between;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
+#logo img {
+    width: 50px;
 }
 
-nav li {
-  margin-right: 20px;
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+#menu a {
+    margin-right: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
 }
 
-.right {
-  display: flex;
-  align-items: center;
+#menu a:hover {
+    text-decoration: underline;
 }
 
-.right a {
-  margin-right: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+#menu a:last-child {
+    margin-right: 0;
 }
 
-.right img {
-  height: 30px;
+#menu a:focus {
+    text-decoration: underline;
+}
+
+#menu a:visited {
+    color: #333;
+}
+
+#menu a:active {
+    text-decoration: underline;
+}
+
+#menu a:focus {
+    outline: none;
+}
+
+#carrinho img {
+    width: 50px;
+}
+
+#carrinho span {
+    font-weight: bold;
 }
 
 main {
-  padding: 20px;
+    padding: 20px;
 }
 
-.product-list {
-  display: flex;
-  justify-content: space-between;
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
 }
 
-.product-list-item {
-  width: 30%;
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 20px;
+.produto {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
-.product-list-item img {
-  width: 100%;
-  height: auto;
+.produto img {
+    width: 100%;
 }
 
-.product-list-item h2 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 20px;
+.produto h2 {
+    margin: 20px 0;
 }
 
-.product-list-item p {
-  font-size: 18px;
-  font-weight: bold;
+.produto a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
 }
 
-.product-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
+.produto a:hover {
+    background-color: #555;
 }
 
-.product-image img {
-  width: 60%;
-  height: auto;
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
 }
 
-.product-info {
-  width: 40%;
-  margin-left: 20px;
+/* Exemplo de estilo para o botão "Adicionar ao carrinho" */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-.product-info h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+/* Exemplo de estilo para o campo de quantidade */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
 }
 
-.product-info .description {
-  margin-bottom: 20px;
+#produto-detalhes {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+
 }
 
-.product-info .price {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
 }
 
-.product-info .quantity {
-  margin-bottom: 20px;
-}
-
-.product-info .quantity label {
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.product-info .quantity input {
-  width: 60px;
-  font-size: 20px;
-  padding: 5px;
-  border: 1px solid #ddd;
-}
-
-.buy-now {
-  background-color: #333;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-.buy-now:hover {
-  background-color: #444;
+#cadastro, #descricao-empresa{
+    margin: auto;
+    width: 50%;
 }
